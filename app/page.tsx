@@ -8,7 +8,7 @@ export default function Home() {
     <div className=" bg-background w-full">
       <Navbar />
 
-      <div className=" grid items-center justify-center w-full">
+      <div className=" grid items-center justify-center w-full sm:mx-0 mx-2">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert sm:w-auto w-[95%]"
           src={`${nextConfig.basePath}/AlbaToLNoBg.png`}
