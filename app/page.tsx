@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
 import Footer from "../components/footer"
+import nextConfig from "../next.config.mjs"
 export default function Home() {
   return (
     <div className=" bg-background w-full">
@@ -10,7 +11,7 @@ export default function Home() {
       <div className=" grid items-center justify-center w-full">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert sm:w-auto w-[95%]"
-          src="/AlbaToLNoBg.png"
+          src={`${nextConfig.basePath}/AlbaToLNoBg.png`}
           alt="logo"
           width={550}
           height={150}
@@ -76,7 +77,7 @@ export default function Home() {
                   className=" xl:min-w-[940px] md:min-w-[700px] sm:min-w-[600px] relative cursor-pointer lg:right-32 md:right-20 right-10 w-[250px] "
                   href={"https://mnar.sa/"}
                 >
-                  <Image src="/Mnar.png" alt="Mnar" width={1400} height={580}
+                  <Image src={`${nextConfig.basePath}/Mnar.png`} alt="Mnar" width={1400} height={580}
                   className="sm:flex hidden" />
                     <Image src="/MnarSM.png" alt="Mnar" width={350} height={480}
                   className=" sm:hidden flex mt-32" />
@@ -125,9 +126,9 @@ export default function Home() {
                   className=" xl:min-w-[800px] md:min-w-[600px] sm:min-w-[500px] relative cursor-pointer sm:top-10 top-[70px] lg:right-32 md:right-20 right-10 w-[250px] "
                   href="https://visitors.saip.gov.sa/en/login"
                 >
-                  <Image src="/visitors.png" alt="Mnar" width={1100} height={500}
+                  <Image src="/visitors.png" alt="Visitors" width={1100} height={500}
                   className="sm:flex hidden" />
-                    <Image src="/visitorsSM.png" alt="Mnar" width={350} height={480}
+                    <Image src="/visitorsSM.png" alt="Visitors" width={350} height={480}
                   className=" sm:hidden flex mt-32" />
                   
                 </a>
