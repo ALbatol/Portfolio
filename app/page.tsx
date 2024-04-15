@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
-import Footer from "../components/footer"
-import nextConfig from "../next.config.mjs"
+import Footer from "../components/footer";
+import nextConfig from "../next.config.mjs";
 export default function Home() {
   return (
     <div className=" bg-background w-full">
@@ -37,7 +37,7 @@ export default function Home() {
           className="sm:mt-32 mt-20 pt-5 container sm:mx-auto mx-[2%]  "
           id="Skills"
         >
-<p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-background pointer-events-none ">
+          <p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-background pointer-events-none ">
             Skills
           </p>
           <div className=" mt-5 flex justify-center">
@@ -50,7 +50,7 @@ export default function Home() {
         className=" sm:mt-32 mt-20 container sm:mx-auto mx-[2%] "
         id="Work_Experience"
       >
-<p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
+        <p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
           Work Experience
         </p>
         <div className=" mt-5">
@@ -77,11 +77,20 @@ export default function Home() {
                   className=" xl:min-w-[940px] md:min-w-[700px] sm:min-w-[600px] relative cursor-pointer lg:right-32 md:right-20 right-10 w-[250px] "
                   href={"https://mnar.sa/"}
                 >
-                  <Image src={`${nextConfig.basePath}/Mnar.png`} alt="Mnar" width={1400} height={580}
-                  className="sm:flex hidden" />
-                    <Image src={`${nextConfig.basePath}/MnarSM.png`} alt="Mnar" width={350} height={480}
-                  className=" sm:hidden flex mt-32" />
-                  
+                  <Image
+                    src={`${nextConfig.basePath}/Mnar.png`}
+                    alt="Mnar"
+                    width={1400}
+                    height={580}
+                    className="sm:flex hidden"
+                  />
+                  <Image
+                    src={`${nextConfig.basePath}/MnarSM.png`}
+                    alt="Mnar"
+                    width={350}
+                    height={480}
+                    className=" sm:hidden flex mt-32"
+                  />
                 </a>
               </div>
             </div>
@@ -99,8 +108,13 @@ export default function Home() {
                     height={450}
                     className="sm:flex hidden"
                   />
-                     <Image src={`${nextConfig.basePath}/MorajeaSM.png`} alt="Mnar" width={350} height={480}
-                  className=" sm:hidden flex mt-14" />
+                  <Image
+                    src={`${nextConfig.basePath}/MorajeaSM.png`}
+                    alt="Mnar"
+                    width={350}
+                    height={480}
+                    className=" sm:hidden flex mt-14"
+                  />
                 </a>
               </div>
               <p className="xl:w-1/4 text-sub_text pointer-events-none font-oldstandard sm:text-[20px] text-[16px]">
@@ -115,7 +129,7 @@ export default function Home() {
 
             <div className=" sm:pt-10 pt-14 flex flex-row xl:justify-between justify-center xl:flex-nowrap flex-wrap-reverse items-center xl:gap-5 sm:gap-y-20 gap-y-[265px] ">
               <p className="xl:w-[20%] text-sub_text pointer-events-none font-oldstandard sm:text-[20px] text-[16px]">
-              The SAIP Visitors website required a rebuild for the middleware
+                The SAIP Visitors website required a rebuild for the middleware
                 part, along with the incorporation of several additional
                 features. The website was originally developed using NextJS and
                 Tailwind CSS. I successfully reconstructed approximately 72% of
@@ -126,11 +140,20 @@ export default function Home() {
                   className=" xl:min-w-[800px] md:min-w-[600px] sm:min-w-[500px] relative cursor-pointer sm:top-10 top-[70px] lg:right-32 md:right-20 right-10 w-[250px] "
                   href="https://visitors.saip.gov.sa/en/login"
                 >
-                  <Image src={`${nextConfig.basePath}/visitors.png`} alt="Visitors" width={1100} height={500}
-                  className="sm:flex hidden" />
-                    <Image src={`${nextConfig.basePath}/visitorsSM.png`} alt="Visitors" width={350} height={480}
-                  className=" sm:hidden flex mt-32" />
-                  
+                  <Image
+                    src={`${nextConfig.basePath}/visitors.png`}
+                    alt="Visitors"
+                    width={1100}
+                    height={500}
+                    className="sm:flex hidden"
+                  />
+                  <Image
+                    src={`${nextConfig.basePath}/visitorsSM.png`}
+                    alt="Visitors"
+                    width={350}
+                    height={480}
+                    className=" sm:hidden flex mt-32"
+                  />
                 </a>
               </div>
             </div>
@@ -142,7 +165,7 @@ export default function Home() {
         className=" sm:mt-32 mt-20 container sm:mx-auto mx-[2%]"
         id="Certificates"
       >
-<p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
+        <p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
           Certificates
         </p>
 
@@ -175,7 +198,7 @@ export default function Home() {
         className=" sm:mt-32 mt-20 container sm:mx-auto mx-[2%]"
         id="Education"
       >
-<p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
+        <p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
           Education
         </p>
         <p className="sm:text-[22px] text-[16px] mt-4 text-left text-sub_text pointer-events-none sm:w-2/3 font-oldstandard">
@@ -187,57 +210,52 @@ export default function Home() {
         </p>
       </div>
 
-      <div
-        className=" sm:-mt-[1050px] -mt-[300px]"
-        id="Contact"
-      >
+      <div className=" sm:-mt-[1050px] -mt-[300px]" id="Contact">
         <div className="relative overflow-hidden items-center justify-center">
-
-        <div className="flex items-center relative right-40 sm:top-[1200px] top-[500px] sm:border-[12px] border-[6px] border-primary bg-background sm:w-[150%] xl:w-[130%] xl:h-[2430px] sm:h-[1900px] w-[160%] h-[1000px] rounded-full">
-
-<div className="grid xl:gap-y-12 gap-y-6 w-1/3 sm:-mt-[1050px] -mt-[500px] 2xl:ml-[400px] xl:ml-[250px] lg:ml-[400px] ml-[200px]">
-<p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
-Contact
-        </p>
-        <div className=" lg:mt-20 mt-10 sm:text-[28px] text-[20px] flex gap-x-3 sm:justify-between text-main_text">
-          <p>
-            Email:
-          </p>
-          <a href="mailto:albatolaldossary@gmail.com" className="cursor-pointer text-sub_text hover:text-primary lg:w-[50%]">
-          albatolaldossary@gmail.com
-          </a>
+          <div className="flex items-center relative right-40 sm:top-[1200px] top-[500px] sm:border-[12px] border-[6px] border-primary bg-background sm:w-[150%] xl:w-[130%] xl:h-[2430px] sm:h-[1900px] w-[160%] h-[1000px] rounded-full">
+            <div className="grid xl:gap-y-12 gap-y-6 w-1/3 sm:-mt-[1050px] -mt-[500px] 2xl:ml-[400px] xl:ml-[250px] lg:ml-[400px] ml-[200px]">
+              <p className="text-left xl:text-[100px] sm:text-[64px] text-[32px] text-primary pointer-events-none ">
+                Contact
+              </p>
+              <div className=" lg:mt-20 mt-10 sm:text-[28px] text-[20px] flex gap-x-3 sm:justify-between text-main_text">
+                <p>Email:</p>
+                <a
+                  href="mailto:albatolaldossary@gmail.com"
+                  className="cursor-pointer text-sub_text hover:text-primary lg:w-[50%]"
+                >
+                  albatolaldossary@gmail.com
+                </a>
+              </div>
+              <div className=" lg:mt-14 mt-10 sm:text-[28px] text-[20px] flex gap-x-4 sm:justify-between text-main_text">
+                <p>phone:</p>
+                <p className=" text-left text-sub_text lg:w-[50%]">
+                  +966 582040298
+                </p>
+              </div>
+              <div className="lg:mt-14 mt-10 sm:text-[28px] text-[20px] flex gap-x-4 sm:justify-between text-main_text">
+                <p>Linkedin</p>
+                <a
+                  href="https://www.linkedin.com/in/albatol-aldossary-2699651a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                  className="cursor-pointer lg:w-[50%] text-left text-main_text hover:text-primary underline"
+                >
+                  Albatol Aldossary
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className=" lg:mt-14 mt-10 sm:text-[28px] text-[20px] flex gap-x-4 sm:justify-between text-main_text">
-          <p>
-            phone:
-          </p>
-          <p className=" text-left text-sub_text lg:w-[50%]">
-          +966 582040298
-          </p>
-        </div>
-        <div className="lg:mt-14 mt-10 sm:text-[28px] text-[20px] flex gap-x-4 sm:justify-between text-main_text">
-          <p>
-          Linkedin
-          </p>
-          <a href="https://www.linkedin.com/in/albatol-aldossary-2699651a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="cursor-pointer lg:w-[50%] text-left text-main_text hover:text-primary underline">
-          Albatol Aldossary
-          </a>
-        </div>
-</div>
-
-        </div>
-        </div> 
       </div>
       {/* Footer */}
-      <Footer/>
+      <Footer />
 
-      <div className="fixed z-[51] bottom-2 right-2 bg-blue-100 text-blue-700 text-center font-bold rounded-full py-2 w-20">
+      {/* reponsive tool */}
+      {/* <div className="fixed z-[51] bottom-2 right-2 bg-blue-100 text-blue-700 text-center font-bold rounded-full py-2 w-20">
         <span className=" block md:hidden ">sm</span>
         <span className="hidden md:block lg:hidden">md</span>
         <span className="hidden lg:block xl:hidden">lg</span>
         <span className="hidden xl:block 2xl:hidden">xl</span>
         <span className="hidden 2xl:block desktopXL:hidden">2xl</span>
-      </div>
+      </div> */}
     </div>
   );
 }
