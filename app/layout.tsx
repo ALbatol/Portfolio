@@ -6,7 +6,7 @@ import nextConfig from "../next.config.mjs"
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Albatol Portfolio",
-  icons: [{ rel: 'icon', type:"image/x-icon",  url: `favicon.ico` }],
+  icons: [{ rel: 'icon', type:"image/x-icon" , url: `${nextConfig.basePath}/favicon.ico` }],
 };
 const oldstandard = Old_Standard_TT({
   subsets: ['latin'],
