@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: "Albatol Portfolio",
   icons: [{ rel: 'icon', type:"image/x-icon" , url: `${nextConfig.basePath}/favicon.ico` }],
 };
+<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
 const oldstandard = Old_Standard_TT({
   subsets: ['latin'],
   variable: "--font-serif",
