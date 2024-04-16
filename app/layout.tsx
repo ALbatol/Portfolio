@@ -3,13 +3,10 @@ import { Lato} from "next/font/google";
 import "./globals.css";
 import {Old_Standard_TT } from 'next/font/google'
 import nextConfig from "../next.config.mjs"
-import Favicon from '/public/favicon.ico';
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Albatol Portfolio",
-  icons: {
-    icon: `${nextConfig.basePath}/favicon.ico `, 
-  }
+  icons: [{ rel: 'icon', url: `${nextConfig.basePath}/favicon.ico` }],
 };
 const oldstandard = Old_Standard_TT({
   subsets: ['latin'],
