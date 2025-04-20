@@ -106,11 +106,11 @@ export default function Home() {
                     alt="Morajea"
                     width={1200}
                     height={450}
-                    className="sm:flex hidden"
+                    className="sm:flex hidden lg:scale-100 scale-90"
                   />
                   <Image
                     src={`${nextConfig.basePath}/MorajeaSM.png`}
-                    alt="Mnar"
+                    alt="Morajea"
                     width={350}
                     height={480}
                     className=" sm:hidden flex mt-14"
@@ -156,6 +156,44 @@ export default function Home() {
                   />
                 </a>
               </div>
+            </div>
+
+            <div className="sm:pt-14 pt-40 flex flex-row sm:justify-between justify-center xl:flex-nowrap flex-wrap items-center sm:gap-5 gap-y-20">
+              <div className="flex overflow-visible items-center justify-center bg-primary xl:w-[650px] xl:h-[650px] sm:w-[520px] sm:h-[520px] w-[270px] h-[270px] sm:pb-0 pb-32 rounded-full">
+                <a
+                  href="https://visitors-admin.nawart.sa/dashboard"
+                  className=" cursor-pointer xl:min-w-[820px] sm:min-w-[700px] w-[88%] relative lg:left-44 md:left-20 left-10"
+                >
+                  <Image
+                    src={`${nextConfig.basePath}/vistiroresAdmin.png`}
+                    alt="vistirores Admin"
+                    width={1000}
+                    height={450}
+                    className="sm:flex hidden lg:scale-100 scale-90"
+                  />
+                  <Image
+                    src={`${nextConfig.basePath}/visitoresAdminSm.png`}
+                    alt="vistirores Admin"
+                    width={350}
+                    height={480}
+                    className=" sm:hidden flex mt-14"
+                  />
+                </a>
+              </div>
+              <p className="xl:w-1/4 text-sub_text pointer-events-none font-oldstandard sm:text-[20px] text-[16px]">
+                Admin Visitors Website – A Solution by Nawart Drive 360° Group.
+                The Admin Visitors website is a solution developed by Nawart
+                Drive Group, designed to manage visitor
+                appointments for organizations efficiently. This platform allows
+                organizations to schedule and manage appointments for their
+                visitors seamlessly. In addition, it offers detailed graphical
+                reports that provide insights into visitor data on a weekly or
+                monthly basis. Organizational administrators have the ability to
+                add and manage employee accounts, assigning specific access
+                permissions based on roles and responsibilities. This ensures
+                secure and customized user experiences, enhancing overall
+                operational efficiency.
+              </p>
             </div>
           </div>
         </div>
